@@ -18,11 +18,7 @@ const { clearScreenDown } = require('readline')
 checkOverload()
 
 //init routes
-app.get('/',(req,res,next)=>{
-    res.status(200).json({
-        message:`Welcome ThanhPro`
-    })
-})
+app.use('/',require('../routes/index'))
 
 //handling error
 
